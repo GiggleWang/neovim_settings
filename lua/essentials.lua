@@ -52,3 +52,15 @@ vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 vim.keymap.set({ "v", "n" }, "<leader>y", "\"+y")
+
+-- Command-line completion options
+vim.opt.wildmode = { "longest", "list", "full" }
+vim.opt.wildoptions = "pum"
+
+-- 显示命令
+vim.opt.showcmd = true
+
+-- 设置命令行高度为 1
+vim.opt.cmdheight = 1
+
+
